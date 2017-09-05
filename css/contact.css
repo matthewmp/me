@@ -1,0 +1,131 @@
+a{
+	color: #fff;
+	text-decoration: none;
+}
+.contact-wrapper{
+	background: #eee;
+	overflow: hidden;
+	position: relative;
+	height: 100vh;
+	clear: both;
+}
+
+.vid{
+	margin: 100px auto;
+	filter: grayscale(1);
+    width: 80%;
+    opacity: 0.3;
+    display: block;
+}
+
+.slogan-wrapper{
+	height: 100px;
+    background: #F7F7EB;
+    width: 100%;
+    color: #333;
+    font-size: 2em;
+    font-family: 'Roboto';
+    text-align: center;
+    line-height: 100px;
+    z-index: 2;
+}
+
+.slogan{
+	margin: 0;
+}
+
+.push{
+	height:150px;
+	text-align: center;
+}
+
+.contact-me{
+	line-height: 150px;
+	font-size: 2em;
+	font-family: 'Roboto Condensed';
+}
+
+footer{
+	font-family: 'Kalam';
+	width: 100%;
+	height:150px;
+	background: #2F2E33;
+	text-align: center;
+}
+
+.f{
+	display: inline-block;
+	width: 25%;
+	height: 100%;
+	background: #2F2E33;
+	color: #fff;
+}
+
+.fa:hover{
+	color: #3A5199;
+}
+
+.email{
+	width: 100%;
+	padding-bottom: 20px;
+	display: inline-block;
+	background: #2F2E33;
+	color: #fff;
+	font-family: 'Ubuntu Mono';
+}
+
+.email:hover{
+	color: #3A5199;
+}
+
+.email2{
+	color: #222;
+}
+
+
+
+@media only screen and (max-width: 520px) {
+	.slogan-wrapper{
+		font-size: 1.5em;
+	}
+}
+
+@media only screen and (max-width: 390px) {
+	.slogan-wrapper{
+		font-size: 1em;
+	}
+
+	.me{
+		font-size: 2em;
+	}
+
+	.contact-me{
+		font-size: 1.5em;
+	}
+}
+
+@media only screen and (max-width: 325px) {
+	.me{
+		font-size: 1.5em;
+	}
+}
+
+@media only screen and (max-width: 275px) {
+	.me{
+		display: none;
+	}
+}
+
+@media only screen and (max-device-width: 740px) and (max-device-height: 420px) and (orientation : landscape){
+	.contact-wrapper{
+		overflow: scroll;
+	}
+
+	.menu-item{
+		padding: 0;
+	}
+
+	.home{
+		margin-top: 60px;
+	}
+}

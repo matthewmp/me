@@ -1,0 +1,129 @@
+.row{
+	position: relative;
+}
+
+.portfolio-wrapper{
+	position: relative;
+	text-align: center;
+	height: 100vh;
+	background: linear-gradient( rgba(233, 233, 234, 0.89), rgba(235, 235, 235, 0.73) ), url(../images/wb.jpg);
+    background-size: cover;
+    background-position: 20%;
+}
+
+.portfolio-header, .skills-header, .contact-header{
+	width: 100%;
+	height: 50px;
+	background: #2F2E33;
+	position: static;
+	margin-top: -32px;
+}
+
+.portfolio-title, .skills-title, .contact-title{
+	color: #fff;
+	text-align: left;
+	font-size: 2em;
+	font-family: 'Roboto Condensed';
+	line-height: 50px;
+}
+
+.port-container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+}
+
+.sh-wrapper{
+	margin-top: 50px;
+}
+
+.screenshot{
+	width: 100%;
+	display: inline-block;
+	background-size: cover;	
+    box-shadow: 2px 2px 20px #000;
+}
+
+.dish{
+	background-image: url('./images/dishiq.png');
+}
+
+.netflix{
+	background-image: url('./images/netflixj.png');
+}
+
+.gp{
+	background-image: url('./images/gamepiazza.png');
+}
+
+.description{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 860px) {
+	.portfolio-wrapper{
+		overflow: scroll;
+	}
+
+	.port-container{
+		padding-top: 0%;
+	}
+
+	.screenshot{
+		width: 45%;
+	}
+}
+
+@media only screen and (max-width: 810px) {
+	.port-container{
+		padding-top: 50%;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.screenshot{
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.screenshot{
+		width: 60%;
+	}
+
+	.port-container{
+		padding-top: 60%;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.screenshot{
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.screenshot{
+		width: 80%;
+	}
+	.port-container{
+		padding-top: 70%;
+	}
+}
+
+
+@media only screen and (max-device-width: 670px) and (max-device-height: 390px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+	.port-container{
+		padding-top: 90%;
+	}
+}
+
+@media only screen and (max-device-width: 640px) and (max-device-height: 360px) and (orientation : landscape){
+	.port-container{
+		padding-top: 90%;
+	}
+}
