@@ -25,6 +25,7 @@
 	font-size: 2em;
 	font-family: 'Roboto Condensed';
 	line-height: 50px;
+	padding-left: 30px;
 }
 
 .port-container{
@@ -33,6 +34,14 @@
 	left: 50%;
 	width: 100%;
 	transform: translate(-50%, -50%);
+}
+
+.portfolio-warning{
+	font-family: 'Roboto';
+    font-size: 2em;
+    background: #444;
+    padding: 20px;
+    color: #fff;
 }
 
 .sh-wrapper{
@@ -44,6 +53,10 @@
 	display: inline-block;
 	background-size: cover;	
     box-shadow: 2px 2px 20px #000;
+}
+
+.screenshot:hover{
+	filter: brightness(0.5);
 }
 
 .dish{
@@ -59,9 +72,9 @@
 }
 
 .description{
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+	font-family: 'Roboto Condensed';
+	background: #ccc;
+	padding: 10px;
 }
 
 @media only screen and (max-width: 860px) {
@@ -78,9 +91,13 @@
 	}
 }
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 860px) {
 	.port-container{
-		padding-top: 50%;
+		position: static;
+		transform: none;
+	}
+	.portfolio-warning{
+		font-size: 1.5em;
 	}
 }
 
@@ -95,8 +112,8 @@
 		width: 60%;
 	}
 
-	.port-container{
-		padding-top: 60%;
+	.portfolio-warning{
+		font-size: 1em;
 	}
 }
 
@@ -109,21 +126,5 @@
 @media only screen and (max-width: 480px) {
 	.screenshot{
 		width: 80%;
-	}
-	.port-container{
-		padding-top: 70%;
-	}
-}
-
-
-@media only screen and (max-device-width: 670px) and (max-device-height: 390px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-	.port-container{
-		padding-top: 90%;
-	}
-}
-
-@media only screen and (max-device-width: 640px) and (max-device-height: 360px) and (orientation : landscape){
-	.port-container{
-		padding-top: 90%;
 	}
 }

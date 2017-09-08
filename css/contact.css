@@ -13,7 +13,7 @@ a{
 .vid{
 	margin: 100px auto;
 	filter: grayscale(1);
-    width: 80%;
+    max-width: 80%;
     opacity: 0.3;
     display: block;
 }
