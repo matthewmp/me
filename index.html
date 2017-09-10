@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Portfolio</title>
+	<title>Matt Palumbo | Full Stack Web Developer</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://use.fontawesome.com/806a6b6224.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/grid.css">
@@ -12,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="css/portfolio.css">
 	<link rel="stylesheet" type="text/css" href="css/contact.css">
 	
-	<link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Kalam|Nothing+You+Could+Do|Roboto|Roboto+Condensed|Sedgwick+Ave|Ubuntu+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Kalam|Nothing+You+Could+Do|Roboto|Roboto+Condensed|Sedgwick+Ave" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
@@ -25,9 +25,9 @@
 				</div>
 
 				<aside class="hamburger">
-					<div class="hb line1"></div>
+					<!-- <div class="hb line1"></div> -->
 					<div class="hb line2"></div>
-					<div class="hb line3"></div>
+					<!-- <div class="hb line3"></div> -->
 				</aside>
 
 				<div class="mobile-menu">
@@ -63,40 +63,78 @@
 			<header class="portfolio-header">
 				<p class="portfolio-title">WORK</p>
 			</header>
-		    <div class="row port-container">
-		    <p class="portfolio-warning">Sites are hosted by Heroku, please give time to load.</p>	    
-		      <div class="col-4 sh-wrapper">
-		        <a href="https://mmpal78.github.io/dishIQ/">
-		        	<img src="./images/dishiq.png" class="screenshot" />
-		        </a>
-		        <div class="description-container">
-		        	<p class="description">
-		        		Dish I.Q. is a web application aimed at connecting people to their favorite dishes while keeping their health and diet needs in mind.  HTML5, CSS, JavaScript, jQuery, AJAX.
-		        	</p>
-		        </div>	
-		      </div>
+		    <div class="row port-container top">
+		        <div class="col-6 sh-wrapper">
+			        <a href="https://mmpal78.github.io/dishIQ/">
+			        	<img src="./images/dishiq.png" class="screenshot" />
+			        </a>
+		      	</div>
+		        <div class="col-6 description-container">
+		        	<div class="description-absolute">
+			        	<p class="description">
+			        		Dish I.Q. is a web application aimed at connecting people to their favorite dishes while keeping their health and diet needs in mind.  Search for your favorite dish or simply search for a type of food.  You can select the max calorie amount and diet type such as vegan, vegetarian, low carb, etc.  Your results will return a plethora of recipes along with all of their nutritional information. Powered by Edamam API.
 
-		      <div class="col-4 sh-wrapper">
-		        <a href="https://netflix-blog-capstone.herokuapp.com/">
-		        	<img src="./images/netflixj.png" class="screenshot" />
-		        </a>
-		        <div class="description-container">
-		        	<p class="description">
-		        		Netflix Junkie is a forum where a user can search for existing threads, create new threads, create/edit posts, like/unlike existing posts, and make comments on other users posts.  Node, MongoDB, Mongoose, Passport, Mocha, Chai, Chai-Http, HTML, JavaScript, jQuery.
-		        	</p>
+			        		
+			        	</p>
+			        	<div class="technologies-wrapper">
+			        		<p class="technologies">HTML5</p>
+			        		<p class="technologies">CSS</p>
+			        		<p class="technologies">JavaScript</p>
+			        		<p class="technologies">jQuery</p>
+			        		<p class="technologies">AJAX</p>
+			        	</div>
+			        </div>
 		        </div>	
-		      </div>
+		    </div>
 
-		      <div class="col-4 sh-wrapper">
-		        <a href="https://gamepiazza.herokuapp.com/">
-		        	<img src="./images/gamepiazza.png" class="screenshot" />
-		        </a>
-		        <div class="description-container">
+		    <div class="row port-container middle">
+		        <div class="col-6 sh-wrapper">
+			        <a href="https://netflix-blog-capstone.herokuapp.com/">
+			        	<img src="./images/netflix.png" class="screenshot" />
+			        </a>
+		        </div>
+		        <div class="col-6 description-container">
 		        	<p class="description">
-		        		Simple, Retro, Gaming. Play single / multiplayer games. Keep track of games played, scores, and stats. Message other players while in multiplayer games.  React, Node, Express, Socket.io, Mocha, Enzyme, JavaScript, HTML, CSS.
+		        		Netflix Junkie is a forum where a user can search for existing threads, create new threads, create/edit posts, like/unlike existing posts, and make comments on other users posts. 
 		        	</p>
+		        	<div class="technologies-wrapper">
+		        		<p class="technologies">Node</p>
+		        		<p class="technologies">MongoDB</p>
+		        		<p class="technologies">Mongoose</p>
+		        		<p class="technologies">Passport</p>
+		        		<p class="technologies">Mocha</p>
+		        		<p class="technologies">Chai</p>
+		        		<p class="technologies">HTML</p>
+		        		<p class="technologies">CSS</p>
+		        		<p class="technologies">JavaScript</p>
+		        		<p class="technologies">jQuery</p>
+		        	</div>
+		        </div>	
+		    </div>
+
+		    <div class="row port-container last"> 
+		        <div class="col-6 sh-wrapper">
+			        <a href="https://gamepiazza.herokuapp.com/">
+			        	<img src="./images/gamepiazza.png" class="screenshot" />
+			        </a>
+		        </div>
+		        <div class="col-6 description-container">
+		        	<p class="description">
+		        		Simple, Retro, Gaming. Play single / multiplayer games. Keep track of games played, scores, and stats. Message other players while in multiplayer games. 
+		        	</p>	 
+		        	<div class="technologies-wrapper">
+		        		<p class="technologies">React</p>
+		        		<p class="technologies">Node</p>
+		        		<p class="technologies">Express</p>
+		        		<p class="technologies">Socket.io</p>
+		        		<p class="technologies">Mocha</p>
+		        		<p class="technologies">Chai</p>
+		        		<p class="technologies">Enzyme</p>
+		        		<p class="technologies">HTML</p>
+		        		<p class="technologies">JavaScript</p>
+		        		<p class="technologies">CSS</p>
+		        	</div>
 		        </div>		
-		      </div>
 		    </div>  
    		</section>
 
@@ -117,7 +155,7 @@
 							<li>Canvas</li>
 							<li>960 Grid System</li>
 							<li>Bootstrap</li>
-							<li>Sass</li>
+							<li>AJAX</li>
 
 						</ul> 
 					</div>
@@ -151,7 +189,7 @@
 			</div>
 			<video src="./images/vidSmall.mov" autoplay loop muted class="vid" /></video>
 			<div class="push">
-				<p class="contact-me"><a class="email2" href="mailto:matthew.m.palumbo@gmail.com">Contact Me for a Quote</a></p>
+				<p class="contact-me"><a class="email2" href="mailto:matthew.m.palumbo@gmail.com">Let's work together.  Contact Me. </a></p>
 			</div>
 			
 		

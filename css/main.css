@@ -17,11 +17,45 @@ header{
 }
 
 .hb{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 	width: 60%;
 	height: 2px;
 	background: #fff;
-	margin: 22% auto;
 }
+
+.hb:before, .hb:after{
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  transition: .5s;
+}
+
+.hb:before{
+  top: -12px;
+}
+
+.hb:after{
+  top: 12px;
+}
+
+.hamburger.active .hb {
+  background: rgba(0,0,0,0);
+}
+
+.hamburger.active .hb:before{
+  top: 0;
+  transform: rotate(45deg);
+} 
+
+.hamburger.active .hb:after{
+  top: 0;
+  transform: rotate(135deg);
+} 
 
 .mobile-menu{
   position: relative;
@@ -35,8 +69,8 @@ header{
 .menu-items-wrapper{
     letter-spacing: 5px;
     color: #fff;
-    font-family: 'Ubuntu Mono';
-    font-size: 2em;
+    font-family: 'Roboto';
+    font-size: 30px;
 }
 
 .menu-item{
@@ -65,10 +99,10 @@ header{
 }
 
 .logo{
-  margin: 15vh auto;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  padding-top: 100px;
+
 }
 
 .me{
@@ -96,11 +130,9 @@ header{
 	font-size: 10vw;
 	color: #fff;
 	vertical-align: middle;
-  font-size: 3.5em;
+  font-size: 5em;
   font-family: 'Nothing You Could Do', arial, serif;
-  margin-left: 75px;
-  margin-top: -10px;
-  letter-spacing: -5px;
+  margin-left: 125px;
 }
 
 /*  Heart  */
@@ -115,10 +147,10 @@ header{
   height: 0;
   width: 0;
   margin-top: -3px;
-  border-top: 25px solid #B52016;
-  border-right: 25px solid transparent;
-  border-left: 25px solid transparent;
-  border-bottom: 25px solid transparent;
+  border-top: 50px solid #BF0404;
+  border-right: 50px solid transparent;
+  border-left: 50px solid transparent;
+  border-bottom: 50px solid transparent;
   animation: pulseBottom 1s infinite;
 }
 
@@ -126,10 +158,10 @@ header{
   display: inline-block;
   height: 0;
   width: 0;
-  border-bottom: 12.5px solid #B52016;
-  border-right: 12.5px solid transparent;
-  border-left: 12.5px solid transparent;
-  border-top: 12.5px solid transparent;
+  border-bottom: 25px solid #BF0404;
+  border-right: 25px solid transparent;
+  border-left: 25px solid transparent;
+  border-top: 25px solid transparent;
   animation: pulseLeft 1s infinite;
 }
 .top-right {
@@ -137,10 +169,10 @@ header{
   height: 0;
   width: 0;
   margin-left: -3px;
-  border-bottom: 12.5px solid #B52016;
-  border-right: 12.5px solid transparent;
-  border-left: 12.5px solid transparent;
-  border-top: 12.5px solid transparent;
+  border-bottom: 25px solid #BF0404;
+  border-right: 25px solid transparent;
+  border-left: 25px solid transparent;
+  border-top: 25px solid transparent;
   animation: pulseLeft 1s infinite;
 }
 
@@ -152,59 +184,95 @@ header{
   font-family: 'Roboto';
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.4);
-  padding: 0px 100px;
+  padding: 20px 100px;
 }
 
 @keyframes pulseBottom{
   93%{
-    border-top: 25px solid #B52016;
+    border-top: 50px solid #BF0404;
   }
   100%{
-    border-top: 50px solid #B52016;
+    border-top: 100px solid #BF0404;
   }
 }
 
 @keyframes pulseLeft{
   94%{
-    border-bottom: 12.5px solid #B52016;
+    border-bottom: 25px solid #BF0404;
   }
   100%{
-    border-bottom: 25px solid #B52016;
+    border-bottom: 50px solid #BF0404;
   }
 }
 
 @keyframes pulseRight{
   95%{
-    border-bottom: 12.5px solid #B52016;
+    border-bottom: 25px solid #BF0404;
   }
   100%{
-    border-bottom: 25px solid #B52016;
+    border-bottom: 50px solid #BF0404;
   }
 }
 
 @media only screen and (max-width: 608px){
   .tab{
+    font-size: 2em;
+  }
+
+  .menu-items-wrapper{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-height: 500px){
+  .tab{
+    bottom: auto;
+  }
+}
+
+@media only screen and (max-width: 475px){
+  .tab{
+    padding: 10px 30px;
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-height: 570px){
+  .menu-item{
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 410px){
+  .tab{
+    padding: 10px 20px;
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 320px){
+  .tab{
+    padding: 10px 10px;
     font-size: 1.5em;
   }
 }
 
-@media only screen and (max-width: 410px){
+@media only screen and (max-width: 235px){
   .tab{
-    padding: 0 50px;
-  }
-}
-
-@media only screen and (max-width: 410px){
-  .tab{
-    padding: 0 30px;
+    padding: 10px 0px;
     font-size: 1em;
   }
-
 }
 
 @media only screen and (max-device-width: 745px) and (max-device-height: 420px){
   .tab{
-      bottom: 0;
+      bottom: auto;
+    }
+}
+
+@media only screen and (max-device-width: 608px) and (max-device-height: 420px){
+  .tab{
+      bottom: auto;
     }
 }
 
@@ -218,8 +286,43 @@ header{
   .menu-items-wrapper{
     font-size: 1em;
   }
+}
+
+@media only screen and (max-width: 315px){
+  .bottom {
+    border-top: 25px solid #B52016;
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    animation: none;
+  }
+
+  .top-left {
+    border-bottom: 12.5px solid #B52016;
+    border-right: 12.5px solid transparent;
+    border-left: 12.5px solid transparent;
+    border-top: 12.5px solid transparent;
+    animation: none;
+  }
+  .top-right {
+    border-bottom: 12.5px solid #B52016;
+    border-right: 12.5px solid transparent;
+    border-left: 12.5px solid transparent;
+    border-top: 12.5px solid transparent;
+    animation: none;
+  }
 
   .title{
-    font-size: 2.5em;
+    margin-left: 75px;
+    margin-top: -10px;
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 200px){
+  .title{
+    margin-left: 50px;
+    margin-top: -1px;
+    font-size: 2em;
   }
 }

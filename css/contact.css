@@ -20,10 +20,10 @@ a{
 
 .slogan-wrapper{
 	height: 100px;
-    background: #F7F7EB;
+    background: #C4F2D8;
     width: 100%;
     color: #333;
-    font-size: 2em;
+    font-size: 30px;
     font-family: 'Roboto';
     text-align: center;
     line-height: 100px;
@@ -86,13 +86,13 @@ footer{
 
 @media only screen and (max-width: 520px) {
 	.slogan-wrapper{
-		font-size: 1.5em;
+		font-size: 25px;
 	}
 }
 
 @media only screen and (max-width: 390px) {
 	.slogan-wrapper{
-		font-size: 1em;
+		font-size: 18px;
 	}
 
 	.me{
@@ -108,11 +108,19 @@ footer{
 	.me{
 		font-size: 1.5em;
 	}
+
+	.slogan-wrapper{
+		font-size: 15px;
+	}
 }
 
 @media only screen and (max-width: 275px) {
 	.me{
 		display: none;
+	}
+
+	.slogan-wrapper{
+		font-size: 8px;
 	}
 }
 

@@ -22,9 +22,6 @@
 }
 
 /* Clearfix */
-.row{
-  margin-top: 30px;
-}
 .row::before,
 .row::after {
   display: table;

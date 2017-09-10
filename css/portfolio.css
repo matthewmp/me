@@ -4,9 +4,7 @@
 
 .portfolio-wrapper{
 	position: relative;
-	text-align: center;
-	height: 100vh;
-	background: linear-gradient( rgba(233, 233, 234, 0.89), rgba(235, 235, 235, 0.73) ), url(../images/wb.jpg);
+	background: linear-gradient( rgba(233, 233, 234, 0.9), rgba(235, 235, 235, 0.9) ), url(../images/wb.jpg);
     background-size: cover;
     background-position: 20%;
 }
@@ -29,30 +27,32 @@
 }
 
 .port-container{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 100%;
-	transform: translate(-50%, -50%);
+	padding: 100px 10px;
+	overflow: auto; 
+	margin: auto;
+
 }
 
-.portfolio-warning{
-	font-family: 'Roboto';
-    font-size: 2em;
-    background: #444;
-    padding: 20px;
-    color: #fff;
+.top{
+	background: #C4F2D8;
+}
+
+.middle{
+	background: #fff;
+}
+
+.last{
+	background: #C4EEF2;
 }
 
 .sh-wrapper{
-	margin-top: 50px;
+	text-align: center;
 }
 
 .screenshot{
 	width: 100%;
 	display: inline-block;
 	background-size: cover;	
-    box-shadow: 2px 2px 20px #000;
 }
 
 .screenshot:hover{
@@ -71,19 +71,82 @@
 	background-image: url('./images/gamepiazza.png');
 }
 
+.description-container{
+	position: relative;
+}
+
 .description{
+	margin: 0;
+	text-align: left;
+	color: #222;
+	font-size: 23px;
 	font-family: 'Roboto Condensed';
-	background: #ccc;
-	padding: 10px;
+	padding: 30px;
+}
+
+.description-container{
+	position: relative;
+	min-height: 400px;
+}
+
+.description-absolute{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.technologies-wrapper{
+	margin: 50px auto;
+	max-width: 500px;
+	font-family: 'Roboto Condensed';
+	font-size: 15px;
+	text-align: center;
+}
+
+.technologies{
+	display: inline-block;
+	margin: 1px;
+	max-width: 100px;	
+	background: #3A5199;
+	padding: 10px 15px;
+	border-radius: 10px;
+	font-family: 'Roboto Condensed';
+	color: #fff;
+	cursor: pointer;
+}
+
+.technologies:active{
+	background: #EE3124;
 }
 
 @media only screen and (max-width: 860px) {
-	.portfolio-wrapper{
-		overflow: scroll;
+	.port-container.top{
+		padding-top: 100px;
 	}
 
 	.port-container{
-		padding-top: 0%;
+		padding: 50px 10px;
+	}
+
+	.description-absolute{
+		position: static;
+		transform: none;
+	}
+
+	.description-container{
+		min-height: 30px;
+	}
+
+	.description{
+		font-size: 20px;
+	}
+
+	.technologies-wrapper{
+		max-width: 80%;
+		margin: auto;
 	}
 
 	.screenshot{
@@ -95,9 +158,6 @@
 	.port-container{
 		position: static;
 		transform: none;
-	}
-	.portfolio-warning{
-		font-size: 1.5em;
 	}
 }
 
@@ -111,15 +171,26 @@
 	.screenshot{
 		width: 60%;
 	}
+}
 
-	.portfolio-warning{
-		font-size: 1em;
+@media only screen and (max-width: 650px) {
+	.description{
+		font-size: 15px;
+	}
+
+	.technologies{
+		font-size: 12px;
+		padding: 10px 15px;
 	}
 }
 
 @media only screen and (max-width: 550px) {
 	.screenshot{
 		width: 70%;
+	}
+
+	.technologies-wrapper{
+		padding: 0;
 	}
 }
 
