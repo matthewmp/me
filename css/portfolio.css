@@ -73,6 +73,10 @@
 
 .project-title{
 	margin: 0;
+	text-align: center;
+}
+
+.project-title a{
     font-size: 35px;
     text-align: center;
     font-family: 'Roboto';
@@ -213,6 +217,10 @@
 	}
 
 	.project-title{
+		font-size: 25px;
+	}
+
+	.project-title a{
 		font-size: 25px;
 	}
 }
