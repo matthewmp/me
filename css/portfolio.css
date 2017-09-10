@@ -71,6 +71,21 @@
 	background-image: url('./images/gamepiazza.png');
 }
 
+.project-title{
+	margin: 0;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Roboto';
+    color: #3A5199;
+}
+
+.border{
+	width: 50%;
+	height: 1px;
+	background: #ccc;
+	margin: auto;
+}
+
 .description-container{
 	position: relative;
 }
