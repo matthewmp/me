@@ -137,3 +137,9 @@ footer{
 		margin-top: 60px;
 	}
 }
+
+@media only screen and (max-height: 690px) {
+	.contact-wrapper{
+		overflow: scroll;
+	}
+}

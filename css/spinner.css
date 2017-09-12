@@ -6,8 +6,8 @@
 	border-radius: 100%;
 	animation: spin 500ms infinite linear;
 	position: absolute;
-	left: 50%;
-	top: 50%;
+	left: 45%;
+	top: 30%;
 	transform: translate(-50%, -50%);
 }
 
@@ -17,5 +17,17 @@
 	}
 	to{
 		transform: rotate(360deg);
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	#spinner{
+		left: 40%;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	#spinner{
+		left: 35%;
 	}
 }
