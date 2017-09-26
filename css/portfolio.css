@@ -4,7 +4,6 @@
 
 .portfolio-wrapper{
 	position: relative;
-	background: linear-gradient( rgba(233, 233, 234, 0.9), rgba(235, 235, 235, 0.9) ), url(../images/wb.jpg);
     background-size: cover;
     background-position: 20%;
 }
