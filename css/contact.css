@@ -81,6 +81,11 @@ footer{
 	color: #222;
 }
 
+.contact-me-link{
+	text-decoration: underline;
+    color: #3A5199;
+}
+
 
 
 @media only screen and (max-width: 520px) {
