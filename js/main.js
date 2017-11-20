@@ -15,5 +15,12 @@ $(document).ready(function(){
 		}, 1000)
 	});
 
+	$('.menu-item').click(function(){
+		$('.hamburger').toggleClass('active', 5000);
+	  	$('.mobile-menu').slideToggle( 'slow', function() {
+	    	// Animation complete.
+	  	});
+	});
+
 	$('#spinner').fadeOut();
 });
