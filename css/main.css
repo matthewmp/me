@@ -1,18 +1,101 @@
-header{
-  z-index: 10;
-  position: fixed;
+.landing-page-wrapper{
   width: 100%;
-  height: 50px;
-  background: #2F2E33;
+  height: 100vh;
 }
 
+header{
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  background: #FF206E;
+  width: 100%;
+  height: 80px;
+}
+
+.me-wrapper{
+  padding: 0px;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+.me-header{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+  background-size: cover;
+  border: 5px solid #fff;
+}
+
+nav{
+    position: absolute;
+    top: 0px;
+    height: 50px;
+    text-align: center;
+}
+.nav-left{
+    left: calc(50% - 330px);
+}
+
+.nav-right{
+    right: calc(50% - 290px);
+}
+
+.nav-item{
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-size: 1.3em;
+    color: #fff;
+    border: 1px solid #fff;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom: none;
+    text-align: center;
+    width: 80px;
+}
+
+.nav-item:hover{
+   background: #fff;
+   color: #FF206E;
+}
+
+.name-wrapper{
+  height: 100vh;
+  background: #fff;
+}
+
+.name{
+  position: absolute;
+  top: 40%;
+  left: 50px;
+  font-size: 6vw;
+  font-family: 'Sedgwick Ave';
+  color: #222;
+
+}
+
+.name h1{
+  margin: 0;
+}
+
+.name h3{
+  font-size: 0.5em;
+  font-family: 'Roboto';
+  margin: 0;
+}
+
+
 .hamburger{
-	position: absolute;
+	position: fixed;
   z-index: 10;
 	width: 50px;
 	height: 50px;
 	right: 30px;
-	top: 0px;
+	top: 10px;
   cursor: pointer;
 }
 
@@ -23,14 +106,14 @@ header{
   transform: translate(-50%, -50%);
 	width: 60%;
 	height: 2px;
-	background: #fff;
+	background: #0c0f0a;
 }
 
 .hb:before, .hb:after{
   content: '';
   width: 100%;
   height: 2px;
-  background: #fff;
+  background: #0c0f0a;
   position: absolute;
   transition: .5s;
 }
@@ -58,12 +141,13 @@ header{
 } 
 
 .mobile-menu{
-  position: relative;
+  position: fixed;
   display: none;
   height: 100vh;
   width: 30%;
-  background: #2F2E33;
-  float: right;
+  background: #FF206E;
+  right: 0;
+  top: 80px;
 }
 
 .menu-items-wrapper{
@@ -80,22 +164,8 @@ header{
 }
 
 .menu-item:hover{
-  background: #3A5199;
+  background: #41ead4;
   cursor: pointer;
-}
-
-.home{
-  margin-top: 50px;
-}
-
-.landing-page-wrapper{
-  background: linear-gradient( rgba(58, 81, 153, 0.68), rgba(58, 81, 153, 0.6) ), url(../images/resize.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
-  background-color: #fff;
 }
 
 .logo{
@@ -128,7 +198,7 @@ header{
 .title{
 	display: inline-block;
 	font-size: 10vw;
-	color: #fff;
+	color: #222;
 	vertical-align: middle;
   font-size: 5em;
   font-family: 'Nothing You Could Do', arial, serif;
@@ -147,7 +217,7 @@ header{
   height: 0;
   width: 0;
   margin-top: -3px;
-  border-top: 50px solid #BF0404;
+  border-top: 50px solid #FF206E;
   border-right: 50px solid transparent;
   border-left: 50px solid transparent;
   border-bottom: 50px solid transparent;
@@ -158,7 +228,7 @@ header{
   display: inline-block;
   height: 0;
   width: 0;
-  border-bottom: 25px solid #BF0404;
+  border-bottom: 25px solid #FF206E;
   border-right: 25px solid transparent;
   border-left: 25px solid transparent;
   border-top: 25px solid transparent;
@@ -169,50 +239,46 @@ header{
   height: 0;
   width: 0;
   margin-left: -3px;
-  border-bottom: 25px solid #BF0404;
+  border-bottom: 25px solid #FF206E;
   border-right: 25px solid transparent;
   border-left: 25px solid transparent;
   border-top: 25px solid transparent;
   animation: pulseLeft 1s infinite;
 }
 
-.tab{
-  position: absolute;
-  bottom: 100px;
-  color: white;
-  font-size: 3em;
-  font-family: 'Roboto';
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.4);
-  padding: 20px 100px;
-}
-
 @keyframes pulseBottom{
   93%{
-    border-top: 50px solid #BF0404;
+    border-top: 50px solid #FF206E;
   }
   100%{
-    border-top: 100px solid #BF0404;
+    border-top: 100px solid #FF206E;
   }
 }
 
 @keyframes pulseLeft{
   94%{
-    border-bottom: 25px solid #BF0404;
+    border-bottom: 25px solid #FF206E;
   }
   100%{
-    border-bottom: 50px solid #BF0404;
+    border-bottom: 50px solid #FF206E;
   }
 }
 
 @keyframes pulseRight{
   95%{
-    border-bottom: 25px solid #BF0404;
+    border-bottom: 25px solid #FF206E;
   }
   100%{
-    border-bottom: 50px solid #BF0404;
+    border-bottom: 50px solid #FF206E;
   }
 }
+
+@media only screen and (max-width: 745px){
+.nav-right, .nav-left{
+    display: none;
+  }
+}
+
 
 @media only screen and (max-width: 645px){
   .menu-items-wrapper{
@@ -291,8 +357,20 @@ header{
 }
 
 @media only screen and (max-width: 315px){
+  
+  .me-wrapper{
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
+
+  .me-header{
+    width: 80px;
+    height: 80px;
+  }
+
   .bottom {
-    border-top: 25px solid #B52016;
+    border-top: 25px solid #ff206e;
     border-right: 25px solid transparent;
     border-left: 25px solid transparent;
     border-bottom: 25px solid transparent;
@@ -300,14 +378,14 @@ header{
   }
 
   .top-left {
-    border-bottom: 12.5px solid #B52016;
+    border-bottom: 12.5px solid #ff206e;
     border-right: 12.5px solid transparent;
     border-left: 12.5px solid transparent;
     border-top: 12.5px solid transparent;
     animation: none;
   }
   .top-right {
-    border-bottom: 12.5px solid #B52016;
+    border-bottom: 12.5px solid #ff206e;
     border-right: 12.5px solid transparent;
     border-left: 12.5px solid transparent;
     border-top: 12.5px solid transparent;
@@ -318,6 +396,12 @@ header{
     margin-left: 75px;
     margin-top: -10px;
     font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 255px){
+  .me-wrapper{
+    display: none;
   }
 }
 

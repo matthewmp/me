@@ -10,8 +10,8 @@
 
 .portfolio-header, .skills-header, .contact-header{
 	width: 100%;
-	height: 50px;
-	background: #2F2E33;
+	height: 80px;
+	background: #41EAD4;
 	position: static;
 	margin-top: -32px;
 }
@@ -21,7 +21,7 @@
 	text-align: left;
 	font-size: 2em;
 	font-family: 'Roboto Condensed';
-	line-height: 50px;
+	line-height: 80px;
 	padding-left: 30px;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .last{
-	background: #eee;
+	background: #fff;
 }
 
 .sh-wrapper{
@@ -79,7 +79,7 @@
     font-size: 35px;
     text-align: center;
     font-family: 'Roboto';
-    color: #3A5199;
+    color: #0c0f0a;
 }
 
 .border{
@@ -127,7 +127,7 @@
 .technologies{
 	display: inline-block;
 	margin: 1px;
-	background: #3A5199;
+	background: #ff206e;
 	padding: 10px 15px;
 	border-radius: 10px;
 	font-family: 'Roboto Condensed';
@@ -136,7 +136,7 @@
 }
 
 .technologies:active{
-	background: #EE3124;
+	background: #41EAD4;
 }
 
 @media only screen and (max-width: 860px) {

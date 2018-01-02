@@ -27,9 +27,9 @@ li{
 	color: #555;
 }
 
-li:hover{
+ .skill-item:hover{
 	cursor: pointer;
-	color: #EE3124;
+	color: #ff206e;
 }
 
 .skills-list-title{

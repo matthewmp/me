@@ -5,10 +5,10 @@
 	<title>Matt Palumbo | Full Stack Web Developer</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://use.fontawesome.com/806a6b6224.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/spinner.css">
 	<link rel="stylesheet" type="text/css" href="css/grid.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/skills.css">
 	<link rel="stylesheet" type="text/css" href="css/portfolio.css">
 	<link rel="stylesheet" type="text/css" href="css/contact.css">
@@ -33,9 +33,29 @@
 		<section class="landing-page-wrapper">
 			<div id="spinner"></div>
 			<header>
-				<div class="me">
-					<p>Matt Palumbo</p>
-				</div>
+				<article class="me-wrapper">
+					<img class="me-header" src="./images/me.jpg" />
+				</article>
+				<nav class="nav-left">
+					<ul>
+						<a class="scrollTo" data-scrollTo="landing-page-wrapper">
+							<li class="nav-item">Home</li>
+						</a>
+						<a class="scrollTo" data-scrollTo="portfolio-wrapper">
+							<li class="nav-item">Work</li>
+						</a>
+					</ul>
+				</nav>
+				<nav class="nav-right">
+					<ul>
+						<a class="scrollTo" data-scrollTo="skills-wrapper">
+							<li class="nav-item">Skills</li>
+						</a>
+						<a class="scrollTo" data-scrollTo="contact-wrapper">
+							<li class="nav-item">Me</li>
+						</a>
+					</ul>
+				</nav>
 
 				<aside class="hamburger">
 					<div class="hb line2"></div>
@@ -68,8 +88,15 @@
 				</div>
 				<span class="title">2 &#60;&#47;&#62;	</span>
 			</aside>
-
-				<h2 class="tab"><span>Full Stack <br /> Web Development</span></h2>
+			
+			<div class="name-wrapper">
+		    	<article class="name">
+			 		<h1>Matt Palumbo</h1>
+			 		<h3>Full-Stack JS Developer</h3>
+		    	</article>
+			     <div class="main"></div>
+		    </div>
+				
 		</section>
 
 		<section class="portfolio-wrapper">
@@ -180,19 +207,19 @@
 					<div class="skills-left">
 						<ul>
 							<li class="skills-list-title">Front End</li>
-							<li>React</li>
-							<li>HTML5</li>
-							<li>CSS/CSS3</li>
-							<li>Javascript</li>
-							<li>jQuery</li>
-							<li>Canvas</li>
-							<li>960 Grid System</li>
-							<li>Bootstrap</li>
-							<li>AJAX</li>
-							<li>Mocha</li>
-							<li>Chai</li>
-							<li>Enzyme</li>
-							<li>Git / GitHub</li>
+							<li class="skill-item">React</li>
+							<li class="skill-item">HTML5</li>
+							<li class="skill-item">CSS/CSS3</li>
+							<li class="skill-item">Javascript</li>
+							<li class="skill-item">jQuery</li>
+							<li class="skill-item">Canvas</li>
+							<li class="skill-item">960 Grid System</li>
+							<li class="skill-item">Bootstrap</li>
+							<li class="skill-item">AJAX</li>
+							<li class="skill-item">Mocha</li>
+							<li class="skill-item">Chai</li>
+							<li class="skill-item">Enzyme</li>
+							<li class="skill-item">Git / GitHub</li>
 
 						</ul> 
 					</div>
@@ -202,11 +229,11 @@
 					<div class="skills-right">
 						<ul>
 							<li class="skills-list-title">Back End</li>
-							<li>Node</li>
-							<li>MongoDB</li>
-							<li>Mongoose</li>
-							<li>Chai HTTP</li>
-							<li>Passport.js</li>
+							<li class="skill-item">Node</li>
+							<li class="skill-item">MongoDB</li>
+							<li class="skill-item">Mongoose</li>
+							<li class="skill-item">Chai HTTP</li>
+							<li class="skill-item">Passport.js</li>
 							
 						</ul> 
 					</div>
@@ -228,7 +255,7 @@
 			<footer>
 		<div class="code f">
 			<p>Code</p>
-			<a href="https://github.com/mmpal78"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+			<a href="https://github.com/matthewmp"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
 
 		</div>
 		<div class="career f">

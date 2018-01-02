@@ -1,8 +1,8 @@
 #spinner{
 	width: 100px;
 	height: 100px;
-	border: 2px solid #f3f3f3;
-	border-top: 3px solid #f25a41;
+	border: 2px solid #f25a41;
+	border-top: 3px solid #ff206e;
 	border-radius: 100%;
 	animation: spin 500ms infinite linear;
 	position: absolute;
