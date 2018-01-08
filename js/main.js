@@ -23,4 +23,13 @@ $(document).ready(function(){
 	});
 
 	$('#spinner').fadeOut();
+
+	$('#home').click(()=>{
+		alert('test');
+	})
+
+	$('.spHomeBtn').click(()=>{
+		let url = 'http://mattpalumbo.me';
+		$(location).attr('href',url);
+	});
 });
