@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 	$('#spinner').fadeOut();
 
-	$('.spHomeBtn').click()=>{
+	$('.spHomeBtn').click(function(){
 		let url = 'http://mattpalumbo.me';
 		$(location).attr('href',url);
 	});
