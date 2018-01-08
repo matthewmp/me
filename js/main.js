@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 	$('#spinner').fadeOut();
 
-	$('#home').click(()=>{
+	$('#home').click(function(){
 		alert('test');
 	})
 
