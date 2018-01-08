@@ -21,7 +21,7 @@
 }
 
 .spotify{
-    z-index: 10;
+    z-index: 9;
     font-family: 'Roboto';
     position: absolute;
     right: 50px;
