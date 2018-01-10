@@ -24,6 +24,7 @@
     z-index: 9;
     font-family: 'Roboto';
     position: absolute;
+    top: 100px;
     right: 50px;
     background: #65D26F;
     border: 2px solid limegreen;
@@ -34,4 +35,11 @@
     width: 150px;
     height: 150px;
     padding: 15px;
+}
+
+@media only screen and (max-width: 670px){
+  .spotify{
+    left: 50%;
+    transform: translate(-50%);
+  }
 }
