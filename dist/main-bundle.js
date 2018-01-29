@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -555,7 +555,8 @@ module.exports = __webpack_require__.p + "./images/netflix.png";
 module.exports = __webpack_require__.p + "./images/wb.jpg";
 
 /***/ }),
-/* 6 */
+/* 6 */,
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -608,7 +609,6 @@ $(document).ready(function () {
 });
 
 /***/ }),
-/* 7 */,
 /* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 

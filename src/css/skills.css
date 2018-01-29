@@ -1,0 +1,61 @@
+.skills-wrapper{
+	background: linear-gradient( rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.74) ), url(../images/wb.jpg);
+}
+
+.skills-container{
+	text-align: center;
+}
+
+.skills-left-container, .skills-right-container{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.skills-left, .skills-right{
+	text-align: left;
+	font-size: 35px;
+	font-family: 
+}
+
+li{
+
+	list-style: none;
+	margin: 20px;
+	font-family: 'Roboto Condensed';
+	height: 60px;
+	line-height: 60px;
+	color: #555;
+}
+
+ .skill-item:hover{
+	cursor: pointer;
+	color: #ff206e;
+}
+
+.skills-list-title{
+	font-family: 'Roboto';
+	font-size: 45px;
+	margin-bottom: 50px;
+	color: #000;
+	text-shadow: 0px 0px 0px;
+}
+
+.skills-list-title:hover{
+	color: #000;
+}
+
+@media only screen and (max-width: 680px) {
+	li{
+		font-size: 25px;
+	}
+
+	.skills-list-title{
+		font-size: 35px;
+	}
+}
+
+@media only screen and (max-width: 490px) {
+	.skills-wrapper{
+		height: auto;
+	}
+}
