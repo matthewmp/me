@@ -7,7 +7,7 @@
 	animation: spin 500ms infinite linear;
 	position: absolute;
 	left: 45%;
-	top: 30%;
+	top: 10%;
 	transform: translate(-50%, -50%);
 }
 
