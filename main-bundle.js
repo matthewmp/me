@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -202,7 +202,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(12);
+var	fixUrls = __webpack_require__(11);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -555,19 +555,18 @@ module.exports = __webpack_require__.p + "./images/netflix.png";
 module.exports = __webpack_require__.p + "./images/wb.jpg";
 
 /***/ }),
-/* 6 */,
-/* 7 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
+__webpack_require__(7);
 __webpack_require__(8);
 __webpack_require__(9);
-__webpack_require__(10);
-__webpack_require__(13);
-__webpack_require__(15);
-__webpack_require__(17);
+__webpack_require__(12);
+__webpack_require__(14);
+__webpack_require__(16);
 __webpack_require__(19);
 __webpack_require__(22);
 __webpack_require__(24);
@@ -609,25 +608,25 @@ $(document).ready(function () {
 });
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "index.html";
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "spotify.html";
 
 /***/ }),
-/* 10 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(11);
+var content = __webpack_require__(10);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -652,7 +651,7 @@ if(false) {
 }
 
 /***/ }),
-/* 11 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -666,7 +665,7 @@ exports.push([module.i, "/*! normalize.css v7.0.0 | MIT License | github.com/nec
 
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, exports) {
 
 
@@ -761,13 +760,13 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(14);
+var content = __webpack_require__(13);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -792,7 +791,7 @@ if(false) {
 }
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -800,19 +799,19 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "a{\n\tcolor: #fff;\n\ttext-decoration: none;\n}\n.contact-wrapper{\n\tbackground: #eee;\n\toverflow: hidden;\n\tposition: relative;\n\tclear: both;\n}\n.contact-header{\n\tmargin-bottom: 100px;\n}\n.vid{\n\tmargin: 100px auto;\n\t-webkit-filter: grayscale(1);\n\t        filter: grayscale(1);\n    max-width: 90%;\n    opacity: 0.3;\n    display: block;\n}\n.slogan-wrapper{\n\theight: 100px;\n\tbackground: #fbff12;\n\twidth: 100%;\n\tcolor: #0c0f0a;\n\tfont-size: 30px;\n\tfont-family: 'Roboto';\n\ttext-align: center;\n\tline-height: 100px;\n\tz-index: 2;\n}\n.slogan{\n\tmargin: 0;\n}\n.push{\n\theight:150px;\n\ttext-align: center;\n}\n.contact-me{\n\tline-height: 150px;\n\tfont-size: 2em;\n\tfont-family: 'Roboto Condensed';\n}\nfooter{\n\tmargin-top: 200px;\n\tfont-family: 'Kalam';\n\twidth: 100%;\n\theight:150px;\n\tbackground: #ff206e;\n\ttext-align: center;\n}\n.f{\n\tdisplay: inline-block;\n\twidth: 25%;\n\theight: 100%;\n\tbackground: #ff206e;\n\tcolor: #fff;\n}\n.fa:hover{\n\tcolor: #41ead4;\n}\n.email{\n\twidth: 100%;\n\tpadding-bottom: 20px;\n\tdisplay: inline-block;\n\tbackground: #2F2E33;\n\tcolor: #fff;\n\tfont-family: 'Roboto Condensed';\n}\n.email:hover{\n\tcolor: #3A5199;\n}\n.email2{\n\tcolor: #222;\n}\n.contact-me-link{\n\ttext-decoration: underline;\n    color: #ff206e;\n}\n@media only screen and (max-width: 520px) {\n\t.slogan-wrapper{\n\t\tfont-size: 25px;\n\t}\n}\n@media only screen and (max-width: 390px) {\n\t.slogan-wrapper{\n\t\tfont-size: 18px;\n\t}\n\n\t.me{\n\t\tfont-size: 2em;\n\t}\n\n\t.contact-me{\n\t\tfont-size: 1.5em;\n\t}\n}\n@media only screen and (max-width: 325px) {\n\t.me{\n\t\tfont-size: 1.5em;\n\t}\n\n\t.slogan-wrapper{\n\t\tfont-size: 15px;\n\t}\n}\n@media only screen and (max-width: 275px) {\n\t.me{\n\t\tdisplay: none;\n\t}\n\n\t.slogan-wrapper{\n\t\tfont-size: 8px;\n\t}\n}\n@media only screen and (max-device-width: 740px) and (max-device-height: 420px) and (orientation : landscape){\n\t.contact-wrapper{\n\t\toverflow: scroll;\n\t}\n\n\t.menu-item{\n\t\tpadding: 0;\n\t}\n\n\t.home{\n\t\tmargin-top: 60px;\n\t}\n}\n@media only screen and (max-height: 690px) {\n\t.contact-wrapper{\n\t\toverflow: scroll;\n\t}\n}\n", ""]);
+exports.push([module.i, "a{\n\tcolor: #fff;\n\ttext-decoration: none;\n}\n.contact-wrapper{\n\tbackground: #eee;\n\toverflow: hidden;\n\tposition: relative;\n\tclear: both;\n}\n.contact-header{\n\tmargin-bottom: 100px;\n}\n.vid{\n\tmargin: 100px auto;\n\t-webkit-filter: grayscale(1);\n\t        filter: grayscale(1);\n    max-width: 90%;\n    opacity: 0.3;\n    display: block;\n}\n.slogan-wrapper{\n\theight: 100px;\n\tbackground: #50fff5;\n\twidth: 100%;\n\tcolor: #0c0f0a;\n\tfont-size: 30px;\n\tfont-family: 'Roboto';\n\ttext-align: center;\n\tline-height: 100px;\n\tz-index: 2;\n}\n.slogan{\n\tmargin: 0;\n}\n.push{\n\theight:150px;\n\ttext-align: center;\n}\n.contact-me{\n\tline-height: 150px;\n\tfont-size: 2em;\n\tfont-family: 'Roboto Condensed';\n}\nfooter{\n\tmargin-top: 200px;\n\tfont-family: 'Kalam';\n\twidth: 100%;\n\theight:150px;\n\tbackground: #0089d9;;\n\ttext-align: center;\n}\n.f{\n\tdisplay: inline-block;\n\twidth: 25%;\n\theight: 100%;\n\tbackground: #0089d9;\n\tcolor: #fff;\n}\n.fa:hover{\n\tcolor: #41ead4;\n}\n.email{\n\twidth: 100%;\n\tpadding-bottom: 20px;\n\tdisplay: inline-block;\n\tbackground: #2F2E33;\n\tcolor: #fff;\n\tfont-family: 'Roboto Condensed';\n}\n.email:hover{\n\tcolor: #3A5199;\n}\n.email2{\n\tcolor: #222;\n}\n.contact-me-link{\n\ttext-decoration: underline;\n    color: #ff206e;\n}\n@media only screen and (max-width: 520px) {\n\t.slogan-wrapper{\n\t\tfont-size: 25px;\n\t}\n}\n@media only screen and (max-width: 390px) {\n\t.slogan-wrapper{\n\t\tfont-size: 18px;\n\t}\n\n\t.me{\n\t\tfont-size: 2em;\n\t}\n\n\t.contact-me{\n\t\tfont-size: 1.5em;\n\t}\n}\n@media only screen and (max-width: 325px) {\n\t.me{\n\t\tfont-size: 1.5em;\n\t}\n\n\t.slogan-wrapper{\n\t\tfont-size: 15px;\n\t}\n}\n@media only screen and (max-width: 275px) {\n\t.me{\n\t\tdisplay: none;\n\t}\n\n\t.slogan-wrapper{\n\t\tfont-size: 8px;\n\t}\n}\n@media only screen and (max-device-width: 740px) and (max-device-height: 420px) and (orientation : landscape){\n\t.contact-wrapper{\n\t\toverflow: scroll;\n\t}\n\n\t.menu-item{\n\t\tpadding: 0;\n\t}\n\n\t.home{\n\t\tmargin-top: 60px;\n\t}\n}\n@media only screen and (max-height: 690px) {\n\t.contact-wrapper{\n\t\toverflow: scroll;\n\t}\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(16);
+var content = __webpack_require__(15);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -837,7 +836,7 @@ if(false) {
 }
 
 /***/ }),
-/* 16 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -851,13 +850,13 @@ exports.push([module.i, "* {\n  -webkit-box-sizing: border-box;\n          box-s
 
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(18);
+var content = __webpack_require__(17);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -882,18 +881,25 @@ if(false) {
 }
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
+var escape = __webpack_require__(2);
 exports = module.exports = __webpack_require__(0)(false);
 // imports
 
 
 // module
-exports.push([module.i, ".landing-page-wrapper{\n  width: 100%;\n  height: 100vh;\n}\n\nheader{\n  position: absolute;\n  z-index: 10;\n  top: 0;\n  background: #FF206E;\n  width: 100%;\n  height: 80px;\n}\n\n.me-wrapper{\n  padding: 0px;\n  background: #fff;\n  width: 100px;\n  height: 100px;\n  border-radius: 50%;\n  margin: 10px auto;\n}\n\n.me-header{\n  width: 100px;\n  height: 100px;\n  border-radius: 50%;\n  margin: auto;\n  background-size: cover;\n  border: 5px solid #fff;\n}\n\nnav{\n    position: absolute;\n    top: 0px;\n    height: 50px;\n    text-align: center;\n}\n\n.nav-left{\n    left: calc(50% - 330px);\n}\n\n.nav-right{\n    right: calc(50% - 290px);\n}\n\n.nav-item{\n    cursor: pointer;\n    display: inline-block;\n    font-family: arial;\n    font-size: 1.3em;\n    color: #fff;\n    border: 1px solid #fff;\n    border-top-right-radius: 5px;\n    border-top-left-radius: 5px;\n    border-bottom: none;\n    text-align: center;\n    width: 80px;\n}\n\n.nav-item:hover{\n   background: #fff;\n   color: #FF206E;\n}\n\n.name-wrapper{\n  height: 100vh;\n  background: #fff;\n}\n\n.name{\n  position: absolute;\n  top: 40%;\n  left: 50px;\n  font-size: 6vw;\n  font-family: 'Sedgwick Ave';\n  color: #222;\n\n}\n\n.name h1{\n  margin: 0;\n}\n\n.name h3{\n  font-size: 0.5em;\n  font-family: 'Roboto';\n  margin: 0;\n}\n\n.hamburger{\n\tposition: fixed;\n  z-index: 10;\n\twidth: 50px;\n\theight: 50px;\n\tright: 30px;\n\ttop: 10px;\n  cursor: pointer;\n}\n\n.hb{\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n\twidth: 60%;\n\theight: 2px;\n\tbackground: #0c0f0a;\n}\n\n.hb:before, .hb:after{\n  content: '';\n  width: 100%;\n  height: 2px;\n  background: #0c0f0a;\n  position: absolute;\n  -webkit-transition: .5s;\n  transition: .5s;\n}\n\n.hb:before{\n  top: -12px;\n}\n\n.hb:after{\n  top: 12px;\n}\n\n.hamburger.active .hb {\n  background: rgba(0,0,0,0);\n}\n\n.hamburger.active .hb:before{\n  top: 0;\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n}\n\n.hamburger.active .hb:after{\n  top: 0;\n  -webkit-transform: rotate(135deg);\n          transform: rotate(135deg);\n}\n\n.mobile-menu{\n  position: fixed;\n  display: none;\n  height: 100vh;\n  width: 30%;\n  background: #FF206E;\n  right: 0;\n  top: 80px;\n}\n\n.menu-items-wrapper{\n    letter-spacing: 5px;\n    color: #fff;\n    font-family: 'Roboto';\n    font-size: 30px;\n}\n\n.menu-item{\n  margin-bottom: 15%;\n  text-align: center;\n  padding: 30px;\n}\n\n.menu-item:hover{\n  background: #41ead4;\n  cursor: pointer;\n}\n\n.logo{\n  text-align: center;\n  width: 100%;\n  padding-top: 100px;\n\n}\n\n.me{\n  line-height: 50px;\n  position: absolute;\n  left: 50px;\n  top: 0px;\n  color: #fff;\n  font-family: 'Roboto Condensed';\n  font-size: 40px;\n}\n\n.me p{\n  margin: 0;\n}\n\n.title-wrapper{\n\tmargin: auto;\n\ttext-align: center;\n\tdisplay: inline-block;\n}\n\n.title{\n\tdisplay: inline-block;\n\tfont-size: 10vw;\n\tcolor: #222;\n\tvertical-align: middle;\n  font-size: 5em;\n  font-family: 'Nothing You Could Do', arial, serif;\n  margin-left: 125px;\n}\n\n/*  Heart  */\n\n.heart-wrapper{\n  position: absolute;\n  margin-right: 65px;\n  margin-top: -10px;\n  display: inline-block;\n}\n\n.bottom {\n  height: 0;\n  width: 0;\n  margin-top: -3px;\n  border-top: 50px solid #FF206E;\n  border-right: 50px solid transparent;\n  border-left: 50px solid transparent;\n  border-bottom: 50px solid transparent;\n  -webkit-animation: pulseBottom 1s infinite;\n          animation: pulseBottom 1s infinite;\n}\n\n.top-left {\n  display: inline-block;\n  height: 0;\n  width: 0;\n  border-bottom: 25px solid #FF206E;\n  border-right: 25px solid transparent;\n  border-left: 25px solid transparent;\n  border-top: 25px solid transparent;\n  -webkit-animation: pulseLeft 1s infinite;\n          animation: pulseLeft 1s infinite;\n}\n\n.top-right {\n  display: inline-block;\n  height: 0;\n  width: 0;\n  margin-left: -3px;\n  border-bottom: 25px solid #FF206E;\n  border-right: 25px solid transparent;\n  border-left: 25px solid transparent;\n  border-top: 25px solid transparent;\n  -webkit-animation: pulseLeft 1s infinite;\n          animation: pulseLeft 1s infinite;\n}\n\n@-webkit-keyframes pulseBottom{\n  93%{\n    border-top: 50px solid #FF206E;\n  }\n  100%{\n    border-top: 100px solid #FF206E;\n  }\n}\n\n@keyframes pulseBottom{\n  93%{\n    border-top: 50px solid #FF206E;\n  }\n  100%{\n    border-top: 100px solid #FF206E;\n  }\n}\n\n@-webkit-keyframes pulseLeft{\n  94%{\n    border-bottom: 25px solid #FF206E;\n  }\n  100%{\n    border-bottom: 50px solid #FF206E;\n  }\n}\n\n@keyframes pulseLeft{\n  94%{\n    border-bottom: 25px solid #FF206E;\n  }\n  100%{\n    border-bottom: 50px solid #FF206E;\n  }\n}\n\n@-webkit-keyframes pulseRight{\n  95%{\n    border-bottom: 25px solid #FF206E;\n  }\n  100%{\n    border-bottom: 50px solid #FF206E;\n  }\n}\n\n@keyframes pulseRight{\n  95%{\n    border-bottom: 25px solid #FF206E;\n  }\n  100%{\n    border-bottom: 50px solid #FF206E;\n  }\n}\n\n@media only screen and (max-width: 745px){\n.nav-right, .nav-left{\n    display: none;\n  }\n}\n\n@media only screen and (max-width: 645px){\n  .menu-items-wrapper{\n    font-size: 20px;\n  }\n}\n\n@media only screen and (max-width: 608px){\n  .tab{\n    font-size: 2em;\n  }\n}\n\n@media only screen and (max-height: 500px){\n  .tab{\n    bottom: auto;\n  }\n}\n\n@media only screen and (max-width: 475px){\n  .tab{\n    padding: 10px 30px;\n    font-size: 2em;\n  }\n}\n\n@media only screen and (max-height: 570px){\n  .menu-item{\n    padding: 0px;\n  }\n}\n\n@media only screen and (max-width: 410px){\n  .tab{\n    padding: 10px 20px;\n    font-size: 2em;\n  }\n}\n\n@media only screen and (max-width: 320px){\n  .tab{\n    padding: 10px 10px;\n    font-size: 1.5em;\n  }\n}\n\n@media only screen and (max-width: 235px){\n  .tab{\n    padding: 10px 0px;\n    font-size: 1em;\n  }\n}\n\n@media only screen and (max-device-width: 745px) and (max-device-height: 420px){\n  .tab{\n      bottom: auto;\n    }\n}\n\n@media only screen and (max-device-width: 608px) and (max-device-height: 420px){\n  .tab{\n      bottom: auto;\n    }\n}\n\n@media only screen and (max-width: 515px){\n  .menu-items-wrapper{\n    font-size: 1.5em;\n  }\n}\n\n@media only screen and (max-width: 415px){\n  .menu-items-wrapper{\n    font-size: 1em;\n  }\n}\n\n@media only screen and (max-width: 315px){\n  \n  .me-wrapper{\n    width: 80px;\n    height: 80px;\n    margin: auto;\n  }\n\n  .me-header{\n    width: 80px;\n    height: 80px;\n  }\n\n  .bottom {\n    border-top: 25px solid #ff206e;\n    border-right: 25px solid transparent;\n    border-left: 25px solid transparent;\n    border-bottom: 25px solid transparent;\n    -webkit-animation: none;\n            animation: none;\n  }\n\n  .top-left {\n    border-bottom: 12.5px solid #ff206e;\n    border-right: 12.5px solid transparent;\n    border-left: 12.5px solid transparent;\n    border-top: 12.5px solid transparent;\n    -webkit-animation: none;\n            animation: none;\n  }\n  .top-right {\n    border-bottom: 12.5px solid #ff206e;\n    border-right: 12.5px solid transparent;\n    border-left: 12.5px solid transparent;\n    border-top: 12.5px solid transparent;\n    -webkit-animation: none;\n            animation: none;\n  }\n\n  .title{\n    margin-left: 75px;\n    margin-top: -10px;\n    font-size: 3em;\n  }\n}\n\n@media only screen and (max-width: 255px){\n  .me-wrapper{\n    display: none;\n  }\n}\n\n@media only screen and (max-width: 200px){\n  .title{\n    margin-left: 50px;\n    margin-top: -1px;\n    font-size: 2em;\n  }\n}\n\n@media only screen and (max-height: 565px){\n  .name{\n    top: 60%; \n    font-size: 4vw;\n  }\n}\n\n@media only screen and (max-width: 670px){\n  .logo{\n    display: none;\n  }\n}\n\n@media only screen and (max-height: 390px){\n  .name{\n    top: 70%; \n    font-size: 2vw;\n  }\n}\n\n\n", ""]);
+exports.push([module.i, ".landing-page-wrapper{\n  position: relative;\n  width: 100%;\n}\n\nheader{\n  position: absolute;\n  z-index: 10;\n  top: 0;\n  width: 100%;\n  height: 80px;\n}\n\n/* 120deg,#0089d9,#50fff5) */\n\n.name-wrapper{\n  background: linear-gradient(129deg,#0089d9,#50fff5);\n  position: relative;\n  min-height: 600px;\n  -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 80%);\n          clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 80%);\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: start;\n      -ms-flex-pack: start;\n          justify-content: start;\n}\n\n.profile{\n  width: 20vw;\n  height: 20vw;\n  position: absolute;\n  right: 0;\n  bottom: -30px;\n  -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 80%);\n          clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 80%);\n  background: url(" + escape(__webpack_require__(18)) + ");\n  /*filter: grayscale(1);*/\n  background-repeat: no-repeat;\n  background-size: contain;\n  opacity: 0.3;\n}\n\n.name{\n  margin-left: 50px;\n  -ms-flex-item-align: center;\n      align-self: center;\n  font-size: 4vw;\n  font-family: 'Raleway';\n  color: #fff;\n}\n\n.name h1{\n  margin: 0;\n  text-shadow: 0 0 1px #777;\n  -webkit-animation: nameDescend 1s ease-out;\n          animation: nameDescend 1s ease-out;\n}\n\n.name h3{\n  font-size: 0.5em;\n  font-family: 'Rubik';\n  margin: 0;\n  font-weight: 200;\n  -webkit-animation: titleAscend 1s ease-out;\n          animation: titleAscend 1s ease-out;\n}\n\n.hamburger{\n\tposition: fixed;\n  z-index: 10;\n\twidth: 50px;\n\theight: 50px;\n\tright: 30px;\n\ttop: 10px;\n  cursor: pointer;\n}\n\n.hb{\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n\twidth: 60%;\n\theight: 2px;\n\tbackground: #0c0f0a;\n}\n\n.hb:before, .hb:after{\n  content: '';\n  width: 100%;\n  height: 2px;\n  background: #0c0f0a;\n  position: absolute;\n  -webkit-transition: .5s;\n  transition: .5s;\n}\n\n.hb:before{\n  top: -12px;\n}\n\n.hb:after{\n  top: 12px;\n}\n\n.hamburger.active .hb {\n  background: rgba(0,0,0,0);\n}\n\n.hamburger.active .hb:before{\n  top: 0;\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n}\n\n.hamburger.active .hb:after{\n  top: 0;\n  -webkit-transform: rotate(135deg);\n          transform: rotate(135deg);\n}\n\n.mobile-menu{\n  position: fixed;\n  display: none;\n  height: 100vh;\n  width: 30%;\n  background: #1ba8e1;\n  right: 0;\n  top: 0px;\n}\n\n.menu-items-wrapper{\n    letter-spacing: 5px;\n    color: #fff;\n    font-family: 'Roboto';\n    font-size: 30px;\n}\n\n.menu-item{\n  margin-bottom: 15%;\n  text-align: center;\n  padding: 30px;\n}\n\n.menu-item:hover{\n  background: #41ead4;\n  cursor: pointer;\n}\n\n.menu-item.home{\n  margin-top: 60px;\n}\n\n.me{\n  line-height: 50px;\n  position: absolute;\n  left: 50px;\n  top: 0px;\n  color: #fff;\n  font-family: 'Roboto Condensed';\n  font-size: 40px;\n}\n\n.me p{\n  margin: 0;\n}\n\n.title-wrapper{\n\tmargin: auto;\n\ttext-align: center;\n\tdisplay: inline-block;\n}\n\n@media only screen and (max-width: 1750px){\n.profile{\n    bottom: 0;\n  }\n}\n\n@media only screen and (max-width: 1750px){\n.profile{\n    width: 20vw;\n    height: 20vw;\n    bottom: 20px;\n  }\n}\n\n@media only screen and (max-width: 1000px){\n.profile{\n    width: 30vw;\n    height: 30vw;\n    bottom: 30px;\n  }\n}\n\n@media only screen and (max-width: 725px){\n.profile{\n    width: 40vw;\n    height: 40vw;\n    bottom: 40px;\n  }\n}\n\n@media only screen and (max-width: 540px){\n.profile{\n    width: 50vw;\n    height: 50vw;\n    bottom: 40px;\n  }\n}\n\n@media only screen and (max-width: 745px){\n.nav-right, .nav-left{\n    display: none;\n  }\n}\n\n@media only screen and (max-width: 645px){\n  .menu-items-wrapper{\n    font-size: 20px;\n  }\n}\n\n@media only screen and (max-width: 608px){\n  .tab{\n    font-size: 2em;\n  }\n}\n\n@media only screen and (max-height: 500px){\n  .tab{\n    bottom: auto;\n  }\n}\n\n@media only screen and (max-width: 475px){\n  .tab{\n    padding: 10px 30px;\n    font-size: 2em;\n  }\n}\n\n@media only screen and (max-height: 570px){\n  .menu-item{\n    padding: 0px;\n  }\n}\n\n@media only screen and (max-width: 410px){\n  .tab{\n    padding: 10px 20px;\n    font-size: 2em;\n  }\n}\n\n@media only screen and (max-width: 320px){\n  .tab{\n    padding: 10px 10px;\n    font-size: 1.5em;\n  }\n}\n\n@media only screen and (max-width: 235px){\n  .tab{\n    padding: 10px 0px;\n    font-size: 1em;\n  }\n}\n\n@media only screen and (max-device-width: 745px) and (max-device-height: 420px){\n  .tab{\n      bottom: auto;\n    }\n}\n\n@media only screen and (max-device-width: 608px) and (max-device-height: 420px){\n  .tab{\n      bottom: auto;\n    }\n}\n\n@media only screen and (max-width: 515px){\n  .menu-items-wrapper{\n    font-size: 1.5em;\n  }\n}\n\n@media only screen and (max-width: 415px){\n  .menu-items-wrapper{\n    font-size: 1em;\n  }\n}\n\n@media only screen and (max-width: 315px){\n  \n  .me-wrapper{\n    width: 80px;\n    height: 80px;\n    margin: auto;\n  }\n\n  .me-header{\n    width: 80px;\n    height: 80px;\n  }\n\n  .bottom {\n    border-top: 25px solid #ff206e;\n    border-right: 25px solid transparent;\n    border-left: 25px solid transparent;\n    border-bottom: 25px solid transparent;\n    -webkit-animation: none;\n            animation: none;\n  }\n\n  .top-left {\n    border-bottom: 12.5px solid #ff206e;\n    border-right: 12.5px solid transparent;\n    border-left: 12.5px solid transparent;\n    border-top: 12.5px solid transparent;\n    -webkit-animation: none;\n            animation: none;\n  }\n  .top-right {\n    border-bottom: 12.5px solid #ff206e;\n    border-right: 12.5px solid transparent;\n    border-left: 12.5px solid transparent;\n    border-top: 12.5px solid transparent;\n    -webkit-animation: none;\n            animation: none;\n  }\n\n  .title{\n    margin-left: 75px;\n    margin-top: -10px;\n    font-size: 3em;\n  }\n}\n\n@media only screen and (max-width: 255px){\n  .me-wrapper{\n    display: none;\n  }\n}\n\n/* Landing Page Animations */\n\n@-webkit-keyframes nameDescend {\n  from{\n    opacity: 0;\n    margin-top: -50px;\n  }\n  to{\n    opacity: 1;\n    margin: 0;\n  }\n}\n\n@keyframes nameDescend {\n  from{\n    opacity: 0;\n    margin-top: -50px;\n  }\n  to{\n    opacity: 1;\n    margin: 0;\n  }\n}\n\n@-webkit-keyframes titleAscend {\n  from{\n    opacity: 0;\n    margin-top: 100px;\n  }\n  to{\n    opacity: 1;\n    margin: 0;\n  }\n}\n\n@keyframes titleAscend {\n  from{\n    opacity: 0;\n    margin-top: 100px;\n  }\n  to{\n    opacity: 1;\n    margin: 0;\n  }\n}\n\n@-webkit-keyframes profilePic {\n  from{\n    opacity: 0;\n  } \n  to{\n    opacity: 0.7;\n  }\n}\n\n@keyframes profilePic {\n  from{\n    opacity: 0;\n  } \n  to{\n    opacity: 0.7;\n  }\n}", ""]);
 
 // exports
 
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./images/test1.png";
 
 /***/ }),
 /* 19 */
@@ -936,7 +942,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, ".row{\n\tposition: relative;\n}\n\n.portfolio-wrapper{\n\tposition: relative;\n    background-size: cover;\n    background-position: 20%;\n}\n\n.portfolio-header, .skills-header, .contact-header{\n\twidth: 100%;\n\theight: 80px;\n\tbackground: #41EAD4;\n\tposition: static;\n\tmargin-top: -32px;\n}\n\n.portfolio-title, .skills-title, .contact-title{\n\tcolor: #fff;\n\ttext-align: left;\n\tfont-size: 2em;\n\tfont-family: 'Roboto Condensed';\n\tline-height: 80px;\n\tpadding-left: 30px;\n}\n\n.port-container{\n\tpadding: 100px 10px;\n\toverflow: auto; \n\tmargin: auto;\n\n}\n\n.top{\n\tbackground: #eee;\n}\n\n.middle{\n\tbackground: #fff;\n}\n\n.last{\n\tbackground: #fff;\n}\n\n.sh-wrapper{\n\ttext-align: center;\n}\n\n.screenshot{\n\twidth: 100%;\n\tdisplay: inline-block;\n\tbackground-size: cover;\t\n}\n\n.screenshot:hover{\n\t-webkit-filter: brightness(0.5);\n\t        filter: brightness(0.5);\n}\n\n.dish{\n\tbackground-image: url(" + escape(__webpack_require__(3)) + ");\n}\n\n.netflix{\n\tbackground-image: url(" + escape(__webpack_require__(4)) + ");\n}\n\n.gp{\n\tbackground-image: url(" + escape(__webpack_require__(21)) + ");\n}\n\n.project-title{\n\tmargin: 0;\n\ttext-align: center;\n}\n\n.project-title a{\n    font-size: 35px;\n    text-align: center;\n    font-family: 'Roboto';\n    color: #0c0f0a;\n}\n\n.border{\n\twidth: 50%;\n\theight: 1px;\n\tbackground: #ccc;\n\tmargin: auto;\n}\n\n.description-container{\n\tposition: relative;\n}\n\n.description{\n\tmargin: 0;\n\ttext-align: left;\n\tcolor: #222;\n\tfont-size: 23px;\n\tfont-family: 'Roboto Condensed';\n\tpadding: 30px;\n}\n\n.description-container{\n\tposition: relative;\n\tmin-height: 400px;\n}\n\n.description-absolute{\n\tposition: absolute;\n\twidth: 100%;\n\ttext-align: center;\n\ttop: 50%;\n\tleft: 50%;\n\t-webkit-transform: translate(-50%, -50%);\n\t        transform: translate(-50%, -50%);\n}\n\n.technologies-wrapper{\n\tmargin: 50px auto;\n\tmax-width: 500px;\n\tfont-family: 'Roboto Condensed';\n\tfont-size: 15px;\n\ttext-align: center;\n}\n\n.technologies{\n\tdisplay: inline-block;\n\tmargin: 1px;\n\tbackground: #ff206e;\n\tpadding: 10px 15px;\n\tborder-radius: 10px;\n\tfont-family: 'Roboto Condensed';\n\tcolor: #fff;\n\tcursor: pointer;\n}\n\n.technologies:active{\n\tbackground: #41EAD4;\n}\n\n@media only screen and (max-width: 860px) {\n\t.port-container.top{\n\t\tpadding-top: 100px;\n\t}\n\n\t.port-container{\n\t\tpadding: 50px 10px;\n\t}\n\n\t.description-absolute{\n\t\tposition: static;\n\t\t-webkit-transform: none;\n\t\t        transform: none;\n\t}\n\n\t.description-container{\n\t\tmin-height: 30px;\n\t}\n\n\t.description{\n\t\tfont-size: 20px;\n\t}\n\n\t.technologies-wrapper{\n\t\tmax-width: 80%;\n\t\tmargin: auto;\n\t}\n\n\t.screenshot{\n\t\twidth: 45%;\n\t}\n}\n\n@media only screen and (max-width: 860px) {\n\t.port-container{\n\t\tposition: static;\n\t\t-webkit-transform: none;\n\t\t        transform: none;\n\t}\n}\n\n@media only screen and (max-width: 750px) {\n\t.screenshot{\n\t\twidth: 50%;\n\t}\n}\n\n@media only screen and (max-width: 650px) {\n\t.screenshot{\n\t\twidth: 60%;\n\t}\n}\n\n@media only screen and (max-width: 650px) {\n\t.description{\n\t\tfont-size: 15px;\n\t}\n\n\t.technologies{\n\t\tfont-size: 12px;\n\t\tpadding: 10px 15px;\n\t}\n}\n\n@media only screen and (max-width: 550px) {\n\t.screenshot{\n\t\twidth: 70%;\n\t}\n\n\t.technologies-wrapper{\n\t\tpadding: 0;\n\t}\n\n\t.description{\n\t\tpadding: 10px 30px;\n\t}\n\n\t.project-title{\n\t\tfont-size: 25px;\n\t}\n\n\t.project-title a{\n\t\tfont-size: 25px;\n\t}\n}\n\n@media only screen and (max-width: 480px) {\n\t.screenshot{\n\t\twidth: 80%;\n\t}\n}", ""]);
+exports.push([module.i, ".row{\n\tposition: relative;\n}\n\n.portfolio-wrapper{\n\tposition: relative;\n    background-size: cover;\n    background-position: 20%;\n}\n\n.port-container{\n\tpadding: 100px 10px;\n\toverflow: auto; \n\tmargin: auto;\n\n}\n\n.top{\n\tbackground: #eee;\n}\n\n.middle{\n\tbackground: #fff;\n}\n\n.last{\n\tbackground: #fff;\n}\n\n.sh-wrapper{\n\ttext-align: center;\n}\n\n.screenshot{\n\twidth: 100%;\n\tdisplay: inline-block;\n\tbackground-size: cover;\t\n}\n\n.screenshot:hover{\n\t-webkit-filter: brightness(0.5);\n\t        filter: brightness(0.5);\n}\n\n.dish{\n\tbackground-image: url(" + escape(__webpack_require__(3)) + ");\n}\n\n.netflix{\n\tbackground-image: url(" + escape(__webpack_require__(4)) + ");\n}\n\n.gp{\n\tbackground-image: url(" + escape(__webpack_require__(21)) + ");\n}\n\n.project-title{\n\tmargin: 0;\n\ttext-align: center;\n}\n\n.project-title a{\n    font-size: 35px;\n    text-align: center;\n    font-family: 'Roboto';\n    color: #0c0f0a;\n}\n\n.border{\n\twidth: 50%;\n\theight: 1px;\n\tbackground: #ccc;\n\tmargin: auto;\n}\n\n.description-container{\n\tposition: relative;\n}\n\n.description{\n\tmargin: 0;\n\ttext-align: left;\n\tcolor: #222;\n\tfont-size: 23px;\n\tfont-family: 'Roboto Condensed';\n\tpadding: 30px;\n}\n\n.description-container{\n\tposition: relative;\n\tmin-height: 400px;\n}\n\n.description-absolute{\n\tposition: absolute;\n\twidth: 100%;\n\ttext-align: center;\n\ttop: 50%;\n\tleft: 50%;\n\t-webkit-transform: translate(-50%, -50%);\n\t        transform: translate(-50%, -50%);\n}\n\n.technologies-wrapper{\n\tmargin: 50px auto;\n\tmax-width: 500px;\n\tfont-family: 'Roboto Condensed';\n\tfont-size: 15px;\n\ttext-align: center;\n}\n\n.technologies{\n\tdisplay: inline-block;\n\tmargin: 1px;\n\tbackground: #ff206e;\n\tpadding: 10px 15px;\n\tborder-radius: 10px;\n\tfont-family: 'Roboto Condensed';\n\tcolor: #fff;\n\tcursor: pointer;\n}\n\n.technologies:active{\n\tbackground: #41EAD4;\n}\n\n@media only screen and (max-width: 860px) {\n\t.port-container.top{\n\t\tpadding-top: 100px;\n\t}\n\n\t.port-container{\n\t\tpadding: 50px 10px;\n\t}\n\n\t.description-absolute{\n\t\tposition: static;\n\t\t-webkit-transform: none;\n\t\t        transform: none;\n\t}\n\n\t.description-container{\n\t\tmin-height: 30px;\n\t}\n\n\t.description{\n\t\tfont-size: 20px;\n\t}\n\n\t.technologies-wrapper{\n\t\tmax-width: 80%;\n\t\tmargin: auto;\n\t}\n\n\t.screenshot{\n\t\twidth: 45%;\n\t}\n}\n\n@media only screen and (max-width: 860px) {\n\t.port-container{\n\t\tposition: static;\n\t\t-webkit-transform: none;\n\t\t        transform: none;\n\t}\n}\n\n@media only screen and (max-width: 750px) {\n\t.screenshot{\n\t\twidth: 50%;\n\t}\n}\n\n@media only screen and (max-width: 650px) {\n\t.screenshot{\n\t\twidth: 60%;\n\t}\n}\n\n@media only screen and (max-width: 650px) {\n\t.description{\n\t\tfont-size: 15px;\n\t}\n\n\t.technologies{\n\t\tfont-size: 12px;\n\t\tpadding: 10px 15px;\n\t}\n}\n\n@media only screen and (max-width: 550px) {\n\t.screenshot{\n\t\twidth: 70%;\n\t}\n\n\t.technologies-wrapper{\n\t\tpadding: 0;\n\t}\n\n\t.description{\n\t\tpadding: 10px 30px;\n\t}\n\n\t.project-title{\n\t\tfont-size: 25px;\n\t}\n\n\t.project-title a{\n\t\tfont-size: 25px;\n\t}\n}\n\n@media only screen and (max-width: 480px) {\n\t.screenshot{\n\t\twidth: 80%;\n\t}\n}", ""]);
 
 // exports
 
@@ -1033,7 +1039,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "#spinner{\n\twidth: 100px;\n\theight: 100px;\n\tborder: 2px solid #f25a41;\n\tborder-top: 3px solid #ff206e;\n\tborder-radius: 100%;\n\t-webkit-animation: spin 500ms infinite linear;\n\t        animation: spin 500ms infinite linear;\n\tposition: absolute;\n\tleft: 45%;\n\ttop: 30%;\n\t-webkit-transform: translate(-50%, -50%);\n\t        transform: translate(-50%, -50%);\n}\n\n@-webkit-keyframes spin{\n\tfrom {\n\t\t-webkit-transform: rotate(0deg);\n\t\t        transform: rotate(0deg);\n\t}\n\tto{\n\t\t-webkit-transform: rotate(360deg);\n\t\t        transform: rotate(360deg);\n\t}\n}\n\n@keyframes spin{\n\tfrom {\n\t\t-webkit-transform: rotate(0deg);\n\t\t        transform: rotate(0deg);\n\t}\n\tto{\n\t\t-webkit-transform: rotate(360deg);\n\t\t        transform: rotate(360deg);\n\t}\n}\n\n@media only screen and (max-width: 425px) {\n\t#spinner{\n\t\tleft: 40%;\n\t}\n}\n\n@media only screen and (max-width: 320px) {\n\t#spinner{\n\t\tleft: 35%;\n\t}\n}", ""]);
+exports.push([module.i, "#spinner{\n\twidth: 100px;\n\theight: 100px;\n\tborder: 2px solid #f25a41;\n\tborder-top: 3px solid #ff206e;\n\tborder-radius: 100%;\n\t-webkit-animation: spin 500ms infinite linear;\n\t        animation: spin 500ms infinite linear;\n\tposition: absolute;\n\tleft: 45%;\n\ttop: 10%;\n\t-webkit-transform: translate(-50%, -50%);\n\t        transform: translate(-50%, -50%);\n}\n\n@-webkit-keyframes spin{\n\tfrom {\n\t\t-webkit-transform: rotate(0deg);\n\t\t        transform: rotate(0deg);\n\t}\n\tto{\n\t\t-webkit-transform: rotate(360deg);\n\t\t        transform: rotate(360deg);\n\t}\n}\n\n@keyframes spin{\n\tfrom {\n\t\t-webkit-transform: rotate(0deg);\n\t\t        transform: rotate(0deg);\n\t}\n\tto{\n\t\t-webkit-transform: rotate(360deg);\n\t\t        transform: rotate(360deg);\n\t}\n}\n\n@media only screen and (max-width: 425px) {\n\t#spinner{\n\t\tleft: 40%;\n\t}\n}\n\n@media only screen and (max-width: 320px) {\n\t#spinner{\n\t\tleft: 35%;\n\t}\n}", ""]);
 
 // exports
 
