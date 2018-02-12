@@ -136,6 +136,10 @@ header{
   cursor: pointer;
 }
 
+.menu-item.home{
+  margin-top: 60px;
+}
+
 .me{
   line-height: 50px;
   position: absolute;
