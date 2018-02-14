@@ -67,7 +67,9 @@
 .working-hard{
 	font-family: 'Roboto Condensed';
     padding: 0 0 10px 5px;
-    font-size: 1.5em;
+    font-size: 1.8em;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .vid{

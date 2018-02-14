@@ -18,7 +18,6 @@ $(document).ready(function(){
 		let swOffset = $('.skills-container').offset();
 		//console.log(docScroll, swOffset.top)
 		if(docScroll >= (swOffset.top / 1.35)){
-			console.log('hit')
 			$('.skill_level').addClass('skillAnimate');
 		}
 	});
