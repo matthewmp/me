@@ -3,7 +3,6 @@ a{
 	text-decoration: none;
 }
 .contact-wrapper{
-	background: #eee;
 	overflow: hidden;
 	position: relative;
 	clear: both;
@@ -11,14 +10,6 @@ a{
 
 .contact-header{
 	margin-bottom: 100px;
-}
-
-.vid{
-	margin: 100px auto;
-	filter: grayscale(1);
-    max-width: 90%;
-    opacity: 0.3;
-    display: block;
 }
 
 .slogan-wrapper{
