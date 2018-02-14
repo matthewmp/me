@@ -2,6 +2,7 @@
 .skills-container{
 	margin: 100px auto 150px auto;
 	width: 80%;
+	max-width: 1200px;
 	padding: 40px;
 	border-radius: 5px;
 }

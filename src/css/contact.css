@@ -8,26 +8,6 @@ a{
 	clear: both;
 }
 
-.contact-header{
-	margin-bottom: 100px;
-}
-
-.slogan-wrapper{
-	height: 100px;
-	background: #50fff5;
-	width: 100%;
-	color: #0c0f0a;
-	font-size: 30px;
-	font-family: 'Roboto';
-	text-align: center;
-	line-height: 100px;
-	z-index: 2;
-}
-
-.slogan{
-	margin: 0;
-}
-
 .push{
 	height:150px;
 	text-align: center;
@@ -77,50 +57,22 @@ footer{
 	color: #222;
 }
 
+.contact{
+	padding: 0 !important;
+}
+
 .contact-me-link{
 	text-decoration: underline;
     color: #ff206e;
 }
 
-
-
-@media only screen and (max-width: 520px) {
-	.slogan-wrapper{
-		font-size: 25px;
-	}
-}
-
 @media only screen and (max-width: 390px) {
-	.slogan-wrapper{
-		font-size: 18px;
-	}
-
 	.me{
 		font-size: 2em;
 	}
 
 	.contact-me{
 		font-size: 1.5em;
-	}
-}
-
-@media only screen and (max-width: 325px) {
-	.me{
-		font-size: 1.5em;
-	}
-
-	.slogan-wrapper{
-		font-size: 15px;
-	}
-}
-
-@media only screen and (max-width: 275px) {
-	.me{
-		display: none;
-	}
-
-	.slogan-wrapper{
-		font-size: 8px;
 	}
 }
 
