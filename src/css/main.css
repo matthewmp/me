@@ -1,3 +1,18 @@
+
+.section-break p:after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width .3s;
+}
+
+.section-break p:hover::after {
+    width: 150px;
+    transition: width .3s;
+}
+
 .landing-page-wrapper{
   position: relative;
   width: 100%;
@@ -121,7 +136,7 @@ header{
 .menu-items-wrapper{
     letter-spacing: 5px;
     color: #fff;
-    font-family: 'Roboto';
+    font-family: 'Raleway';
     font-size: 30px;
 }
 

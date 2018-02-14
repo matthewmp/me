@@ -54,14 +54,14 @@
 }
 
 .project-title{
-	margin: 0;
+	margin-top: 40px;
 	text-align: center;
 }
 
 .project-title a{
     font-size: 35px;
     text-align: center;
-    font-family: 'Roboto';
+    font-family: 'Raleway';
     color: #0c0f0a;
 }
 
@@ -78,16 +78,17 @@
 
 .description{
 	margin: 0;
-	text-align: left;
+	text-align: center;
 	color: #222;
-	font-size: 23px;
-	font-family: 'Roboto Condensed';
+	font-size: 20px;
+	font-family: 'Poppins';
 	padding: 30px;
 }
 
 .description-container{
 	position: relative;
 	min-height: 400px;
+	text-align: center;
 }
 
 .description-absolute{
@@ -100,11 +101,20 @@
 }
 
 .technologies-wrapper{
+	display: inline-block;
 	margin: 50px auto;
 	max-width: 500px;
 	font-family: 'Roboto Condensed';
 	font-size: 15px;
 	text-align: center;
+}
+
+.top{
+	clip-path: polygon(0 0, 100% 5%, 100% 85%, 0% 100%);
+}
+
+.top-desc-cont{
+	margin-bottom: 100px;
 }
 
 .technologies{

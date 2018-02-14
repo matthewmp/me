@@ -8,8 +8,11 @@ require('./css/portfolio.css');
 require('./css/skills.css');
 require('./css/spinner.css');
 require('./css/spotify.css');
-
+require('aos');
+	
 $(document).ready(function(){
+
+
 	$( '.hamburger' ).click(function() {
 		$('.hamburger').toggleClass('active', 5000);
 
