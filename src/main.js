@@ -1,3 +1,4 @@
+
 require('./index.html');
 require('./spotify.html');
 require('./css/normalize.css');
@@ -8,10 +9,19 @@ require('./css/portfolio.css');
 require('./css/skills.css');
 require('./css/spinner.css');
 require('./css/spotify.css');
-require('aos');
-	
+
 $(document).ready(function(){
 
+	// Scroll Animation
+	$(document).scroll(()=>{
+		let docScroll = $(document).scrollTop();
+		let swOffset = $('.skills-container').offset();
+		//console.log(docScroll, swOffset.top)
+		if(docScroll >= (swOffset.top / 1.35)){
+			console.log('hit')
+			$('.skill_level').addClass('skillAnimate');
+		}
+	});
 
 	$( '.hamburger' ).click(function() {
 		$('.hamburger').toggleClass('active', 5000);

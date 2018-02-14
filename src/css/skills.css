@@ -1,3 +1,4 @@
+
 .skills-container{
 	margin: 100px auto 150px auto;
 	width: 80%;
@@ -37,6 +38,9 @@
 .skill_level{
 	background: #0fffb7;
 	height: 15px;
+}
+
+.skillAnimate{
 	animation: anim 1500ms ease-out;
 }
 
@@ -109,5 +113,12 @@
 @media only screen and (max-width: 730px){
   .skillbox{
     display: block;
+  }
+}
+
+
+@media only screen and (max-width: 500px){
+  .skills-container{
+    width: 100%;
   }
 }
